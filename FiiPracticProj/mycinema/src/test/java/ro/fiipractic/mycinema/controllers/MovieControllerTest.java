@@ -11,15 +11,13 @@ import org.mockito.MockitoAnnotations;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import ro.fiipractic.mycinema.dtos.MovieDto;
+
 import ro.fiipractic.mycinema.entities.Movie;
 import ro.fiipractic.mycinema.exceptions.NotFoundException;
 import ro.fiipractic.mycinema.services.impl.MovieServiceImpl;
 
 import java.net.URISyntaxException;
-import java.util.Optional;
 
-import static org.junit.Assert.fail;
 
 public class MovieControllerTest {
 
@@ -33,13 +31,13 @@ public class MovieControllerTest {
     private MovieController controller;
 
     private Movie movie;
-    //private MovieDto movieDto;
+
 
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         movie = buildMovie();
-        //movieDto = buildMovieDto();
+
     }
 
     @Test
@@ -54,19 +52,7 @@ public class MovieControllerTest {
         Assertions.assertThat(movieById).isNotNull();
         Assertions.assertThat(movieById).isEqualToComparingFieldByFieldRecursively(movie);
     }
-/*
-    @Test(expected = NotFoundException.class)
-    public void shouldThrowNotFoundExceptionWhenMovieById() throws NotFoundException {
-        //arrange
-        Mockito.when(movieService.getMovieById(2L)).thenReturn(null);
 
-        //act
-        Movie movieById = movieService.getMovieById(2L);
-
-        //assert
-        fail("Nop");
-    }
-*/
     @Test
     public void shouldReturnResponseEntityForSave() throws URISyntaxException {
         //arrange
@@ -86,7 +72,7 @@ public class MovieControllerTest {
 
     @After
     public void tearDown() {
-        //movieDto = null;
+
         movie = null;
     }
 
@@ -99,14 +85,5 @@ public class MovieControllerTest {
         return movie;
     }
 
-    /*
-    private MovieDto buildMovieDto(){
-        MovieDto movieDto = new MovieDto();
-        movieDto.setId(1L);
-        movieDto.setTitle("MovieTitleDto1");
-        movieDto.setDescription("Super cool movieDto! :D");
-        movieDto.setDuration_minutes(120);
-        return movieDto;
-    }
-    */
+
 }
