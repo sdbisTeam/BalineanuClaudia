@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtSelect"
+        android:layout_width="224dp"
+        android:layout_height="31dp"
+        android:text="Select below:"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Location" />
+
+    <Button
+        android:id="@+id/btnHotels"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Hotels" />
+
+    <Button
+        android:id="@+id/btnRestaurants"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Restaurants" />
+
+    <Button
+        android:id="@+id/btnAttractions"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Tourist Attraction" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Refresh location" />
+
+</LinearLayout>

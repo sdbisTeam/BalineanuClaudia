@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantsActivity"
+    android:orientation="vertical"
+
+    >
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:text="Back" />
+
+
+    <TextView
+        android:id="@+id/txtRest"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:textSize="16dip"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+
+        android:text="Restaurants  " />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtFireRibs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="FireRibs" />
+
+    <TextView
+        android:id="@+id/txtLatR1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="47.159468" />
+
+    <TextView
+        android:id="@+id/txtLongR1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="27.599773" />
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:srcCompat="@color/browser_actions_title_color"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[5]" />
+
+
+        <TextView
+            android:id="@+id/txtDescR1"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:text="Description FireRibs! Un concept de Bar-B-Q House, cu farmec american, care se adresează înfocaţilor după coaste gătite spre perfecţiune. La Fire Ribs, atmosfera şi cuptoarele sunt încinse pentru bună dispoziţie şi pentru o masă copioasă. Ingredientele proaspete sunt adunate în acest colţ de lume pentru ca noi să pregătim preparate ce-ţi lasă gura apă. Carnea, legumele şi condimentele se întâlnesc într-o explozie a gustului pentru a-ţi potoli foamea şi pofta." />
+
+    <TextView
+        android:id="@+id/txtDist1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See location"
+        android:id="@+id/btnSee1"
+        android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+</ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    <TextView
+        android:id="@+id/txtKFC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="KFC" />
+
+    <TextView
+        android:id="@+id/txtLatR2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="47.157044" />
+
+    <TextView
+        android:id="@+id/txtLongR2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="27.589736" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:srcCompat="@color/browser_actions_title_color"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[5]" />
+
+
+        <TextView
+            android:id="@+id/txtDescR2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="Description KFC! Palas Mall, Strada Palas 7A, Iași 700051.  Ne angajăm să îți oferim mâncare delicioasă, potrivită oricărui stil de viață. Știm că este foarte important să păstrăm transparența privind ingredientele folosite în bucătăria noastră și, de aceea, îți vom spune mai multe despre călătoria produselor noastre, de la ferme până în bucket-urile KFC și despre angajamentul nostru pentru siguranța alimentară." />
+
+    <TextView
+        android:id="@+id/txtDist2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See location"
+        android:id="@+id/btnSee2"
+        android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/txtMamma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="Mamma Mia" />
+
+            <TextView
+                android:id="@+id/txtLatR3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="47.164216" />
+
+            <TextView
+                android:id="@+id/txtLongR3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="27.5778053" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:srcCompat="@color/browser_actions_title_color"
+                tools:srcCompat="@tools:sample/backgrounds/scenic[5]" />
+
+
+            <TextView
+                android:id="@+id/txtDescR3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="Description Mamma Mia! Bulevardul Ștefan cel Mare și Sfânt nr. 10 - 12, Iași,  Mamma Mia deservește o gamă foarte largă de evenimente, de la relaxante petreceri în aer liber, până la seminarii şi congrese oficiale. Întotdeauna aceeaşi atitudine ireproşabilă, aceeaşi calitate incontestabilă. Mari sau mici, oficiale sau neoficiale, între prieteni sau cu superiori, evenimentele organizate sunt pe mâini bune alături de Mamma Mia."
+                />
+            <TextView
+                android:id="@+id/txtDist3"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See location"
+                android:id="@+id/btnSee3"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
